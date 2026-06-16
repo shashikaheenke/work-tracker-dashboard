@@ -4,6 +4,10 @@ A portfolio-ready React dashboard that shows how a small team could replace a me
 
 This project uses fake data only. It does not use any company code, internal screenshots, client names, or real operational data.
 
+## Live Demo
+
+[View Live Demo](https://work-trackerdashboard.vercel.app/)
+
 ## Features
 
 - Summary cards for total work, completed work, overdue items, blocked items, and hours
