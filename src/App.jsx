@@ -104,9 +104,35 @@ function App() {
     setItems((currentItems) => [newItem, ...currentItems]);
   }
 
+  function handleUpdateWorkItem(updatedItem) {
+    setItems((currentItems) =>
+      currentItems.map((item) => {
+        if (item.id === updatedItem.id) {
+          return updatedItem;
+        }
+
+        return item;
+      }),
+    );
+  }
+
+  function handleDeleteWorkItem(itemId) {
+    const confirmed = window.confirm(
+      'Are you sure you want to delete this work item?',
+    );
+
+    if (!confirmed) {
+      return;
+    }
+
+    setItems((currentItems) =>
+      currentItems.filter((item) => item.id !== itemId),
+    );
+  }
+
   function handleResetDemoData() {
     const confirmed = window.confirm(
-      'This will remove any work items you added and restore the original fake demo data. Continue?',
+      'This will remove any work items you added or edited and restore the original fake demo data. Continue?',
     );
 
     if (!confirmed) {
@@ -189,7 +215,11 @@ function App() {
         </button>
       </div>
 
-      <WorkTable items={filteredItems} />
+      <WorkTable
+        items={filteredItems}
+        onUpdateWorkItem={handleUpdateWorkItem}
+        onDeleteWorkItem={handleDeleteWorkItem}
+      />
     </main>
   );
 }

@@ -623,3 +623,74 @@ tr:hover td {
     width: 100%;
   }
 }
+
+.row-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.table-action-button {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.edit-button {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.delete-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.edit-row td {
+  background: #f8fafc;
+}
+
+.inline-edit-form {
+  padding: 20px;
+  border: 1px solid #dbeafe;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.edit-form-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.edit-form-header h3 {
+  margin: 0 0 4px;
+  color: #0f172a;
+}
+
+.edit-form-header p {
+  margin: 0;
+  color: #64748b;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .row-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .table-action-button {
+    width: 100%;
+  }
+
+  .edit-form-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
