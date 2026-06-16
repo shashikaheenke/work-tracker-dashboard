@@ -6,7 +6,7 @@ This project uses fake data only. It does not use any company code, internal scr
 
 ## Live Demo
 
-[View Live Demo](https://work-trackerdashboard.vercel.app/)
+[View Live Demo](https://work-tracker-dashboard-sable.vercel.app/)
 
 ## Features
 
