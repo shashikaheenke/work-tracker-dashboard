@@ -1,22 +1,25 @@
 # Work Tracker Dashboard
 
-A portfolio-ready React dashboard that shows how a small team could replace a messy Excel/CSV work tracker with a clean internal dashboard.
-
-This project uses fake data only. It does not use any company code, internal screenshots, client names, or real operational data.
-
 ## Live Demo
 
 [View Live Demo](https://work-tracker-dashboard-sable.vercel.app/)
 
+A portfolio-ready React dashboard that shows how a small team could replace a messy Excel/CSV work tracker with a clean internal dashboard.
+
+This project uses fake data only. It does not use any company code, internal screenshots, client names, or real operational data.
+
 ## Features
 
-- Summary cards for total work, completed work, overdue items, blocked items, and hours
-- Search across ID, title, owner, team, status, priority, type, source, and notes
+- Dashboard summary cards
+- Search and filter work items
 - Filter by status, team, and priority
-- Simple status and priority charts using CSS
-- Responsive dashboard layout
-- Work item table with badges and progress bars
-- CSV export of the filtered results
+- Status and priority summary charts
+- Add new work items using a form
+- Save added work items in browser localStorage
+- Reset back to fake demo data
+- Export filtered work items to CSV
+- Responsive layout
+- Fake data only
 
 ## Tech Stack
 
